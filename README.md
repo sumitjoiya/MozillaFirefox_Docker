@@ -20,12 +20,17 @@ Mozilla Firefox, developed by the Mozilla Foundation, is a free and open-source 
 
 ### Step 1: Pulling the Docker Image  
 The first step was to download the Docker image for Mozilla Firefox or a compatible Linux distribution image capable of running Firefox. The command used:  
-```bash  
-docker pull jlesage/firefox 
+    ```bash  
+    docker pull jlesage/firefox 
+
 
 ### Step 2: Create and Run a Docker Container 
 A container was instantiated using the pulled Docker image:
 
-bash
-Copy code
-docker run -d --name=firefox -p 5800:5800 -v /docker/appdata/firefox:/config:rw jlesage/firefox  
+      bash
+      Copy code
+      docker run -d --name=firefox -p 5800:5800 -v /docker/appdata/firefox:/config:rw jlesage/firefox  
+
+ ### Step 3: Accessing MozillaFirefox in Browser:
+ After the container started successfully, Couchbase was accessed in a browser by navigating to:     
+      http://localhost:5800  
