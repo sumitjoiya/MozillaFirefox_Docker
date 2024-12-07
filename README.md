@@ -34,3 +34,12 @@ A container was instantiated using the pulled Docker image:
  After the container started successfully, Couchbase was accessed in a browser by navigating to: 
  
       http://localhost:5800  
+
+---
+
+## Video:
+
+---
+
+## Conclusion:
+This project demonstrated a seamless setup of Mozilla Firefox using Docker and accessing it via a localhost connection on Chrome. It highlights the efficiency of containerized applications and their integration into diverse computing environments, providing valuable insights into Docker's utility for developers and testers.
