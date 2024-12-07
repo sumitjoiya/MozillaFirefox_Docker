@@ -16,12 +16,16 @@ Mozilla Firefox, developed by the Mozilla Foundation, is a free and open-source 
 
 ---
 
-## Report on Terminal Activity and Localhost Search  
+## Steps to Setup and Run Couchbase 
 
-### 1. Terminal Activity  
-The terminal serves as the interface for executing Docker commands to set up, run, and manage the Mozilla Firefox container. Below is an overview of the terminal activities undertaken during the project:  
-
-#### Pulling the Docker Image  
+### Step 1: Pulling the Docker Image  
 The first step was to download the Docker image for Mozilla Firefox or a compatible Linux distribution image capable of running Firefox. The command used:  
 ```bash  
-docker pull jlesage/firefox  
+docker pull jlesage/firefox 
+
+### Step 2: Create and Run a Docker Container 
+A container was instantiated using the pulled Docker image:
+
+bash
+Copy code
+docker run -d --name=firefox -p 5800:5800 -v /docker/appdata/firefox:/config:rw jlesage/firefox  
